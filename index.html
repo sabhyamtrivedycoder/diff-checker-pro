@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diff Checker Pro — Text & Code Difference Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><span>⚡</span><h1>Diff Checker Pro</h1><span class="badge">v1.0</span></div>
+    <div class="actions">
+      <button id="compareBtn" class="btn primary">🔍 Compare Diff</button>
+      <button id="swapBtn" class="btn secondary">⇄ Swap</button>
+      <button id="clearBtn" class="btn secondary">↺ Clear</button>
+      <a href="https://sabhyamtrivedycoder.github.io/portfolio/" target="_blank" class="nav-portfolio">Portfolio ↗</a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="input-panels">
+      <div class="panel">
+        <label>Original Text / Code</label>
+        <textarea id="origText" placeholder="Paste original content here..."></textarea>
+      </div>
+      <div class="panel">
+        <label>Modified Text / Code</label>
+        <textarea id="modText" placeholder="Paste modified content here..."></textarea>
+      </div>
+    </div>
+    <div class="stats-bar">
+      <span>Original Lines: <strong id="origLines">0</strong></span>
+      <span>Modified Lines: <strong id="modLines">0</strong></span>
+      <span>Additions: <strong id="adds" style="color:#10b981;">+0</strong></span>
+      <span>Deletions: <strong id="dels" style="color:#ef4444;">-0</strong></span>
+    </div>
+    <div class="diff-view" id="diffOutput">
+      <p class="placeholder">Click "Compare Diff" to visualize additions and removals.</p>
+    </div>
+  </main>
+  <footer>
+    <p>Engineered by <a href="https://github.com/sabhyamtrivedycoder" target="_blank">Sabhyam Trivedy</a> • 100% Client-Side • MIT License</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
